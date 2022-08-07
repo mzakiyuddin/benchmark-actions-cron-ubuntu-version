@@ -1,4 +1,4 @@
-name: Run With Ubuntu Latest
+name: Run With Ubuntu 20.04
 
 on:
   schedule:
