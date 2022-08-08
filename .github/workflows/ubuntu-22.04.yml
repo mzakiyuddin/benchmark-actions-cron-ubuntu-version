@@ -1,4 +1,4 @@
-name: Run With Ubuntu Latest
+name: Run With Ubuntu 22.04
 
 on:
   schedule:
@@ -6,14 +6,14 @@ on:
 
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout repo content
         uses: actions/checkout@v3
 
       - name: Update timestamp
-        run: ./timestamp.sh >> ubuntu-latest.txt
+        run: ./timestamp.sh >> ubuntu-22.04.txt
 
       - name: Git Add and Commit
         run: |
