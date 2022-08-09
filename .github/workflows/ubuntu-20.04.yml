@@ -10,4 +10,4 @@ jobs:
 
     steps:
       - name: Update timestamp
-        run: curl https://api-benchmark-cron.vercel.app/ping?id=github-ubuntu-20.04
+        run: curl "https://api-benchmark-cron.vercel.app/ping?id=github-ubuntu-20.04"
