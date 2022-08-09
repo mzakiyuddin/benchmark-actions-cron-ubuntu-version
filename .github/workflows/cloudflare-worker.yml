@@ -1,0 +1,13 @@
+name: Triggered by Cloudflare Worker
+
+on:
+  repository_dispatch:
+    types: [cloudflare-worker]
+
+jobs:
+  run:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Update timestamp
+        run: curl "https://api-benchmark-cron.vercel.app/ping?id=cloudflare-worker"
